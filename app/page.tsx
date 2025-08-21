@@ -8,7 +8,7 @@ import "./../app/app.css";
 import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
-import { StorageBrowser } from '../components/StorageBrowser';
+import { StorageBrowser } from '../components/StorageBrowser.tsx';
 
 Amplify.configure(outputs);
 
