@@ -8,7 +8,7 @@ import "./../app/app.css";
 import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
-import { StorageBrowser } from '../components/StorageBrowser.tsx';
+import { StorageBrowser } from '../components/StorageBrowser';
 
 Amplify.configure(outputs);
 
@@ -22,7 +22,7 @@ export default function App() {
       next: (data) => setTodos([...data.items]),
     });
   }
-
+  
   useEffect(() => {
     listTodos();
   }, []);
